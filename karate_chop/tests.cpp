@@ -1,5 +1,7 @@
 #if defined(USE_V1)
 #include "chopv1.txx"
+#elif defined(USE_V2)
+#include "chopv2.txx"
 #else
 #error USE_VXXX (XXX being an integer) not defined.
 #endif

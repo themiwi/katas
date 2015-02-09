@@ -1,6 +1,6 @@
 include_directories(${PROJECT_SOURCE_DIR})
 
-foreach (i RANGE 1 1)
+foreach (i RANGE 1 2)
   add_executable(chopv${i} tests.cpp)
   set_target_properties(chopv${i} PROPERTIES COMPILE_DEFINITIONS USE_V${i})
   target_link_libraries(chopv${i} ${GMOCK_BOTH_LIBRARIES})

@@ -1,4 +1,8 @@
-#error TODO includes for chop implementations
+#if defined(USE_V1)
+#include "chopv1.txx"
+#else
+#error USE_VXXX (XXX being an integer) not defined.
+#endif
 
 // Work around fileno() not being defined if compiled with -std=c++11.
 #ifdef __STRICT_ANSI__

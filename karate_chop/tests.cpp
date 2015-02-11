@@ -2,6 +2,8 @@
 #include "chopv1.txx"
 #elif defined(USE_V2)
 #include "chopv2.txx"
+#elif defined(USE_V3)
+#include "chopv3.txx"
 #else
 #error USE_VXXX (XXX being an integer) not defined.
 #endif

@@ -38,6 +38,7 @@ if (BUILD_TESTING)
   include_directories(${GMOCK_INCLUDE_DIRS})
 
   add_subdirectory(karate_chop)
+  add_subdirectory(data_munging)
 endif()
 
 # vim: set et sw=2 :
